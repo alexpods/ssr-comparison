@@ -9,21 +9,21 @@ module.exports = ng
   .Component({
     selector: 'app',
     directives: [User, NgFor],
-    template: '' +
-      '<div>' +
-        ' <template ngFor #userData [ngForOf]="userDatas"> ' +
-          ' <user ' +
-            ' [_id]="userData._id" ' +
-            ' [name]="userData.name" ' +
-            ' [age]="userData.age" ' +
-            ' [phone]="userData.phone" ' +
-            ' [picture]="userData.picture" ' +
-            ' [balance]="userData.balance" ' +
-            ' [tags]="userData.tags" ' +
-            ' [friends]="userData.friends" ' +
-          ' ></user> ' +
-        ' </template> ' +
-      '</div>'
+    template: ' \
+      <div> \
+        <template ngFor #userData [ngForOf]="userDatas"> \
+          <user \
+            [_id]="userData._id" \
+            [name]="userData.name" \
+            [age]="userData.age" \
+            [phone]="userData.phone" \
+            [picture]="userData.picture" \
+            [balance]="userData.balance" \
+            [tags]="userData.tags" \
+            [friends]="userData.friends" \
+          ></user> \
+        </template> \
+      </div>'
   })
   .Class({
     constructor: [function() {
